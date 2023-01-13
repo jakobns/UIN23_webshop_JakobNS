@@ -1,5 +1,5 @@
 :root{
-    --red: #da291c
+    --red: #da291c:
     --yellow: #ffd700:
     --blue: #006db7:
     --green: #00af4d:
@@ -15,5 +15,5 @@ body {
     background-color: var(--yellow);
     font-family: 'rubik', sans-serif;
     font-size: var(--rootsize);
-    
+
 }
