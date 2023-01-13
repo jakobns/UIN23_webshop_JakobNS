@@ -1,4 +1,19 @@
-p{
-    font-size: 40;
+:root{
+    --red: #da291c
+    --yellow: #ffd700:
+    --blue: #006db7:
+    --green: #00af4d:
+    --white: #ffffff:
+    --black: #000000:
+    --maxwith: 1200px:
+    --rootsize: 20px:
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;0,700;1,400&display=swap'); 
+
+body {
+    background-color: var(--yellow);
+    font-family: 'rubik', sans-serif;
+    font-size: var(--rootsize);
     
 }
