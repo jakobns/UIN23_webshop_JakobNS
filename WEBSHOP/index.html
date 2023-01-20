@@ -18,6 +18,21 @@
             <img src="imgs/legocart.svg" alt="Handlekurv"/>
         </figure>
     </header>
+
+    <section id="cartview">
+        <h3>Din Handlevogn</h3>
+        <ul>
+            <li>
+                <span class="title">Dragon zane</span>
+                <span class="price">89,-</span>
+                <span class="quantity">x1</span>
+                <button class="delete">x</button>
+            </li>
+        </ul>
+
+        <p>Totalt kr. <span id="total">0</span></p>
+    </section>
+
     <nav>
     <a href="city.html">city</a>
     <a class="active" href="ninjago.hmtl">ninjago</a>
@@ -32,7 +47,7 @@
             <a href="ninjago.html">Ninjago</a>
             <h3>Dragon zane</h3>
             <span class="price">kr. 89,-</span>
-            <button>Legg i handlekurv</button>
+            <button onClick="addToCart('Dragon Zane', 89)">Legg i handlekurv</button>        
         </article>
 
         <article class="product-card">
