@@ -1,5 +1,8 @@
 header{
     width: 100%;
+    border: solid 1px;
+    margin-bottom: 2rem;
+    margin-top:  2rem;
 }
 
 header h1{
@@ -11,65 +14,54 @@ header h1{
 
 .tab {
     overflow: hidden;
-    border: 1px solid #ADD8E6;
-    background-color: ##ADD8E6;
+    border: 1px solid #25dfe6;
+    background-color: #25dfe6;
   }
 
-button{
-  border: none;
-  padding: 1.5rem;
-  font-size: 1.2rem
-}
-
-button.active{
-  background-color: #ADD8E6;
   
-}
+  /* Stiler for knappene */
   
-  /* Style the buttons that are used to open the tab content */
+  button{
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    transition: 0.4s;
+  }
+  
   .tab button {
-    background-color: #ADD8E6;
+    background-color: #25dfe6;
     border: none;
     outline: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.4s;
     width: 100%;
-    
   }
   
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ADD8E6;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: ##ADD8E6;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    
+  button:focus {
+    background-color: #25dfe6;
+    border-color: #25dfe6;
+    color: #fff;
   }
 
-  body {
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-        background-color: #ffffff;
-        overflow: hidden;
-        position: relative;
-      }
+  /* stiler for info-boksen */
+  div.tabcontent{
+    border-top: solid 1rem #25dfe6;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    padding: 6px 12px;
+    display: block;
+    transition: ease-in-out 0.7s;
+  }
   
-div.tabcontent{
-  border-top: solid 1rem #ADD8E6;
-  border-left: solid 1px;
-  border-bottom: solid 1px;
-  border-right: solid 1px;
-  display: none;
-  transition: ease-in-out 0.7s;
-}
+
+  /* sentrering av nettsiden */
+  body {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+  }
+  
